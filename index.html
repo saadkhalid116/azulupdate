@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Azul Emerald Sea</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Flatpickr CSS -->
+        <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="styles.css">
+    
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    
+        <!-- Flatpickr JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    
+        <!-- Owl Carousel JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+
+          <!-- Splide.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    </head>
+
+
+<body>
+   <!-- Top Navbar -->
+    <nav class="navbar navbar-dark bg-transparent py-0 pt-3 top-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+        <div></div>
+        <a href="#" class="navbar-brand mx-auto text-center">
+            <img src="Frame 36.png" alt="Azul Emerald Logo" class="navbar-logo">
+        </a>
+        <a href="#" class="btn btn-outline-light-s btn-sm">Sign in</a>
+        </div>
+    </nav>
+
+  <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-secondary py-0 pb-3 main-navbar">
+        <div class="container">
+        <!-- Left Side Toggler -->
+        <button class="navbar-toggler d-block custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="menu-button.svg" alt="Toggle" class="custom-toggler-icon">
+        </button>
+          
+          
+        <div class="d-block d-flex d-lg-none align-items-center">
+            <div class="dropdown me-3">
+            <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+                <img src="arrow.png" alt="Arrow" class="dropdown-arrow">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">ES</a></li>
+            </ul>
+            </div>
+            <a href="#" class="btn btn-outline-light btn-sm">Book Now</a>
+        </div>
+
+        <!-- Center Menu Items -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accommodations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side Language and Button -->
+        <div class="d-none d-lg-flex align-items-center">
+            <div class="dropdown me-3">
+            <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+                <img src="arrow.png" alt="Arrow" class="dropdown-arrow">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">ES</a></li>
+            </ul>
+            </div>
+            <a href="#" class="btn btn-outline-light btn-sm">Book Now</a>
+        </div>
+        </div>
+    </nav>
+
+  <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('background1.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('background2.svg');"></div>
+        <div class="carousel-item" style="background-image: url('background3.svg');"></div>
+        <div class="carousel-item" style="background-image: url('background4.jpg');"></div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+        <div class="row justify-content-center align-items-center g-3">
+            <div class="col-md-3">
+            <input type="text" id="checkin-date" class="form-control with-icon" placeholder="Check in">
+            </div>
+            <div class="col-md-3">
+            <input type="text" id="checkout-date" class="form-control with-icon" placeholder="Check out">
+            </div>
+            <div class="col-md-3">
+            <input type="text" class="form-control with-guest" placeholder="2 guests, 1 room">
+            </div>
+            <div class="col-md-2">
+            <button class="btn btn-primary w-100">Book Now</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Custom Range Navigation -->
+        <div class="custom-carousel-navigation">
+        <span id="current-slide">1</span>
+        <div class="line"></div>
+        <span id="total-slides">4</span>
+        </div>
+    </div>
+
+    <div class="centered-text">
+        <h1>Welcome to Azul Emerald Sea</h1>
+        <h2 class="text-uppercase">Kiteboarding experience</h2>
+        <h1>Experience a natural kiteboarding wonder and get to stay at the most luxorious places</h1>
+    </div>
+
+
+    <section class="luxury-escape-section position-relative">
+        <div class="container-fluid pt-5 p-0">
+            <div class="row align-items-center">
+              <!-- Left Side Carousel -->
+              <div class="col-md-4 col-12 position-relative px-4 px-md-0">
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active no-vh">
+                        <img src="bedroom-with-view-ocean-balcony.png" alt="Luxury Bedroom 1" class="img-fluid w-100">
+                    </div>
+                    <div class="carousel-item no-vh">
+                      <img src="room1.png" alt="Luxury Bedroom 2" class="img-fluid w-100">
+                    </div>
+                    <div class="carousel-item no-vh">
+                      <img src="room2.png" alt="Luxury Bedroom 3" class="img-fluid w-100">
+                    </div>
+                    <div class="carousel-item no-vh">
+                      <img src="room3.png" alt="Luxury Bedroom 4" class="img-fluid w-100">
+                    </div>
+                  </div>
+        
+                  <!-- Custom Carousel Navigation -->
+                  <div class="custom-carousel-navigation">
+                    <span id="current-slide-2">1</span>
+                    <div class="line"></div>
+                    <span id="total-slides-2">4</span>
+                </div>
+        
+                  <!-- Overlay for Description and Button -->
+                  <div class="image-overlay">
+                    <span>Single bed.</span>
+                    <a href="#" class="btn btn-outline-light btn-sm">View</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Right Side Text -->
+              <div class="col-md-8 text-md-start text-center px-5">
+                <p class="section-subtitle mb-2 mt-5 mt-md-0">Accommodations</p>
+                <h2 class="section-title">TRUE LUXURY ESCAPE</h2>
+                <p class="section-description px-0 px-sm-5 px-md-0 px-lg-5 text-start mb-3 mb-sm-4 mb-md-3 mb-lg-5">
+                  Journey to the heart of the emerald sea, where Azul Lodge blends seamlessly into the surrounding wilderness. 
+                  Reconnect with Mother Nature and experience true serenity in your luxury accommodation.
+                </p>
+                <p class="section-description px-0 px-sm-5 px-md-0 px-lg-5 text-start">
+                  Journey to the heart of the emerald sea, where Azul Lodge blends seamlessly into the surrounding wilderness. 
+                  Reconnect with Mother Nature and experience true serenity in your luxury accommodation.
+                </p>
+                <a href="#" class="btn btn-link text-decoration-none px-0 px-sm-5">
+                  Discover our accommodations →
+                </a>
+              </div>
+            </div>
+          </div>
+        
+        
+        <div class="background-lines"></div>
+
+        <section class="discover-rooms-section1">
+
+            <div class="container text-start py-5">
+                <!-- Title and Navigation -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
+                    <h2 class="section-title accommodations-center mb-2 mb-md-0 text-center text-md-start">
+                        DISCOVER OUR ROOMS 
+                        <span class="accommodations-text" style="font-size: 16px;">Accommodations</span>
+                      </h2>
+                      
+                    <!-- Carousel Navigation Buttons for Larger Screens -->
+                    <div class="carousel-controls d-none d-md-flex me-5">
+                      <button class="btn owl-prev me-3">
+                        <img src="arrow-left.svg" alt="Previous" style="width: 56px;">
+                      </button>
+                      <button class="btn owl-next">
+                        <img src="arrow-right.svg" alt="Next" style="width: 56px;">
+                      </button>
+                    </div>
+                    <!-- Centered Carousel Navigation Buttons for Smaller Screens -->
+                    <div class="carousel-controls d-flex d-md-none justify-content-center mt-0">
+                      <button class="btn owl-prev">
+                        <img src="arrow-left.svg" alt="Previous" style="width: 56px;">
+                      </button>
+                      <button class="btn owl-next">
+                        <img src="arrow-right.svg" alt="Next" style="width: 56px;">
+                      </button>
+                    </div>
+                  </div>
+                  
+                  
+
+               
+                
+                <!-- Carousel -->
+                <div class="owl-carousel owl-theme" id="carousel-1">
+                    <!-- Room 1 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="room1.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">View</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Luxury Single Bedroom</p>
+                            <p class="room-details text-muted mb-0">Up to 2 guests</p>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="room2.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">View</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Luxury Single Bedroom</p>
+                            <p class="room-details text-muted mb-0">Up to 2 guests</p>
+                        </div>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="room3.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">View</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Luxury Single Bedroom</p>
+                            <p class="room-details text-muted mb-0">Up to 2 guests</p>
+                        </div>
+                    </div>
+                    <!-- Add more rooms as needed -->
+    
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="room1.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">View</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Luxury Single Bedroom</p>
+                            <p class="room-details text-muted mb-0">Up to 2 guests</p>
+                        </div>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="room2.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">View</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Luxury Single Bedroom</p>
+                            <p class="room-details text-muted mb-0">Up to 2 guests</p>
+                        </div>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+    
+        </section>
+
+        
+    </section>
+
+    <section class="custom-section">
+        <div class="container h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-box text-dark p-4 text-center p-1 p-lg-5">
+              <h4 class="mb-3 section-title1 text-uppercase">One of the most thrilling experiences</h4>
+              <p class="section-description1 text-white">Check out all of the experiences that you can deal with!</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="pattern-section position-relative">
+        <div class="background-pattern"></div>
+
+        <div class="container-fluid py-5 p-0">
+        <div class="container">
+            <p class="section-subtitle mb-2 ms-2 text-center text-md-start">Experiences & activities</p>
+
+            <div class="row align-items-center">
+                <div class="row ms-2 ">
+                  <div class="col-md-5 text-md-start text-center px-0 mb-0 d-none d-md-block">
+                    <h2 class="section-title text-uppercase">Kiteboarding</h2>
+                  </div>
+                  <div class="col-md-7 text-md-start text-center px-0 mb-0 d-none d-md-block">
+                    <p class="section-description px-0 px-sm-5 text-start ms-0">
+                      Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="row ms-2">
+                  <div class="col-md-5 col-lg-6 text-md-start text-center px-0 mb-0 d-none d-md-block">
+                    <h2 class="section-title text-uppercase" style="line-height: 1;">experience & more</span></h2>
+                  </div>
+                  <div class="col-md-7 col-lg-6 text-md-start text-center px-0 mb-0 d-none d-md-block">
+                    <p class="section-description px-0 px-sm-5 text-start">
+                      With over 18 years of expertise in this exhilarating sport, we invite you to experience one of the world's most exclusive kiteboarding paradises.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="row align-items-center">
+                  <div class="row ms-2 d-block d-md-none">
+                      <div class="col-md-12 text-md-start text-center px-0 mb-0">
+                      <h2 class="section-title text-uppercase">Kiteboarding Experiences & more</h2>
+                    </div>
+                    <div class="col-md-12 text-md-start text-center px-0 mb-0">
+                      <p class="section-description px-0 px-sm-0 text-start ms-2">
+                        Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.                         With over 18 years of expertise in this exhilarating sport, we invite you to experience one of the world's most exclusive kiteboarding paradises.
+  
+                      </p>
+                     
+                    </div>
+                  </div>
+            
+                <!-- Container to align the link to the start -->
+                <div class="row ms-0">
+                  <div class="col-12 text-md-start text-center px-0 mb-0">
+                    <a href="#" class="btn btn-link text-decoration-none p-0 px-0 px-sm-5 mb-4 mt-4 mt-sm-0">
+                      Go to the activities →
+                    </a>
+                  </div>
+                </div>
+              </div>
+             
+          </div>
+        </div>
+          
+         
+
+        <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="image-stack">
+                    <img src="low-angle-shot-person-surfing-flying-parachute-same-time-kitesurfing.png" alt="Image 1">
+                    <img src="man-holding-surfing-board-outdoors.png" alt="Image 2">
+                  </div>
+                </li>
+                <li class="splide__slide"><img src="person-surfing-flying-parachute-same-time-kitesurfing-bonaire-caribbean.png" alt="Image 3"></li>
+                <li class="splide__slide"><img src="young-man-with-kitesurf-board.png" alt="Image 4"></li>
+              </ul>
+            </div>
+          </div>
+        
+
+       
+        <section class="restaurant-section pt-5">
+
+            <div class="container text-center">
+              <p class="text-uppercase text-muted mb-2 section-description">Restaurant</p>
+              <h1 class="fw-bold display-4 section-title text-uppercase">The Flavours of Our Imagination</h1>
+              <button class="btn btn-outline-dark mt-3 restaurant-section-check">Check out our restaurant</button>
+              
+              <div class="row mt-5 g-0">
+                <div class="col-12 col-md-4">
+                  <div class="small-image text-center text-md-start">
+                    <img src="small-image.png" alt="Small Image" class="img-fluid rounded shadow">
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 pt-5 medium-image-wrapper">
+                    <div class="medium-image">
+                      <img src="medium-image.png" alt="Medium Image" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 pt-5">
+                  <div class="large-image pt-5">
+                    <img src="large-image.png" alt="Large Image" class="img-fluid rounded shadow">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section class="discover-rooms-section1">
+            <div class="container justify-content-between align-items-center mb-4">
+                <p class="text-center section-description mt-4">Azul experience</p>
+                <h2 class="section-title mb-0 ms-auto text-center text-xl-end">
+                    KEEP EXPLORING
+                </h2>
+                <p class="text-center section-description mt-0 mt-md-4">See everything that we offer instantly!</p>
+
+            </div>
+            
+
+            <div class="container text-start py-5">
+                <!-- Title and Navigation -->
+               
+            <div class="carousel-container position-relative">
+                    <div class="carousel-controls position-absolute top-50 start-0 translate-middle-y ">
+                        <button class="btn owl-prev me-3">
+                            <img src="arrow-left.svg" alt="Previous" style="width: 56px;">
+                        </button>
+                    </div>
+                    <div class="carousel-controls position-absolute top-50 end-0 translate-middle-y ">
+                        <button class="btn owl-next">
+                            <img src="arrow-right.svg" alt="Next" style="width: 56px;">
+                        </button>
+                    </div>
+                <!-- Carousel -->
+                <div class="owl-carousel owl-theme" id="carousel-2">
+                    <!-- Room 1 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-one.png" alt="Luxury Bedroom" class="img-fluid">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Experiences</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-two.png" alt="Luxury Bedroom" class="img-fluid">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Location</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-one.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Experiences</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+                    <!-- Add more rooms as needed -->
+    
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-two.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Location</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-one.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Experiences</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+                    <!-- Add more items as needed -->
+                    <div class="item">
+                        <!-- Image Container -->
+                        <div class="position-relative">
+                            <img src="exploring-two.png" alt="Luxury Bedroom" class="img-fluid w-100">
+                            <div class="image-overlay d-flex justify-content-end align-items-center custom-border-top">
+                                <a href="#" class="btn btn-outline-light me-2">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
+                        <div class="footer-content text-start mt-3">
+                            <p class="room-title fw-bold mb-1">Location</p>
+                            <p class="room-details text-muted mb-0">Let yourself surrender to the power of wind and water, becoming the perfect point of balance between these two extraordinary forces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+    
+        </section>
+
+        <div class="container-fluid px-0">
+            <div class="splide-container">
+                <!-- Top Row Carousel -->
+                <div class="splide top-row">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="top1.png" alt="Image 2"></li>
+                      <li class="splide__slide"><img src="top2.png" alt="Image 1"></li>
+                      <li class="splide__slide"><img src="top3.png" alt="Image 3"></li>
+                      <li class="splide__slide"><img src="top4.jpeg" alt="Image 4"></li>
+            
+                    </ul>
+                  </div>
+                </div>
+            
+                <!-- Bottom Row Carousel -->
+                <div class="splide bottom-row">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="bottom1.png" alt="Image 4"></li>
+                      <li class="splide__slide"><img src="bottom2.png" alt="Image 5"></li>
+                      <li class="splide__slide"><img src="bottom3.png" alt="Image 6"></li>
+            
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+       
+    </section>
+
+    <section class="footer-section position-relative py-0">
+            
+            <div class="background-footer"></div>
+            <div class="container container-footer position-relative px-0 px-xl-5">
+                
+                <p class="subtitle section-description">Every information needed</p>
+                <p class="section-title text-center text-uppercase">Property Details</p>
+                <div class="accordion position-relative px-0 px-xl-5" id="propertyDetails">
+                    <div class="accordion-item">
+                        <p class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Featured Amenities
+                            </button>
+                        </p>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#propertyDetails">
+                            <div class="accordion-body accordion-body-underlined">
+                                <a href="#">Restaurant</a>
+                                <a href="#">Room service</a>
+                                <a href="#">Experiences</a>
+                                <a href="#">Accommodations</a>
+                                <a href="#">Our pool</a>
+                                <a href="#">Kite surfing on the sea</a>
+                                <a href="#">Other links</a>
+                                <a href="#">Other links</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Hotel information
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#propertyDetails">
+                            <div class="accordion-body">
+                                <div class="border-bottom">
+                                    <p class="accordion-body-H">Stay Schedule</p>
+                                    <p>Check-in 3:00 pm</p>
+                                    <p>Check-out 11:00 am</p>
+                                    <p>Other informations</p>
+                                </div>
+                                <div class="border-bottom">
+                                    <p class="accordion-body-H">Parking</p>
+                                    <p>On-Site Parking</p>
+                                    <p>Daily: $40.00</p>
+                                    <p>Weekly: $280.00</p>
+                                </div>
+                                <div>
+                                    <p class="accordion-body-H">Pet Policy</p>
+                                    <p>Pets Welcome.</p>
+                                    <p>Non-Refundable Pet Fee Per Stay: $150.00</p>
+                                    <p>Maximum Pet Weight: 35.0 lbs</p>
+                                </div>
+                            
+                                <div>
+                                    <p class="accordion-body-H">Restaurant</p>
+                                    <p>Opening: 3:00 pm</p>
+                                    <p>Closing: 11:00 am</p>
+                                    <a href="#" class="" style="color: inherit; text-decoration: underline;">Go to the restaurants available</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                General Information
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#propertyDetails">
+                            <div class="accordion-body accordion-body-G">
+                                <div>
+                                    <p class="accordion-body-H">PAYMENT POLICIES</p>
+                                    <p>Accept: credit cards</p>
+                                </div>
+                                <div>
+                                    <p class="accordion-body-H">CONTACTS</p>
+                                    <p>+73 123 411 4560</p>
+                                    <p>info@azulemerald.com</p>
+                                </div>
+                                <div>
+                                    <p class="accordion-body-H">SERVICES</p>
+                                    <p>Concierge desk service</p>
+                                    <p>Property has elevators</p>
+                                    <p>Languages spoken by staff: English</p>
+                                </div>
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Accessibility information
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#propertyDetails">
+                            <div class="accordion-body">
+                                <div class="border-bottom">
+                                    <p class="accordion-body-H">Accessible Hotel Features</p>
+                                    <p>Accessible on-site parking</p>
+                                    <p>Property has elevators</p>
+                                    <p>Self Operating lift or a sloped entry in hotel swimming pools</p>
+                                    <p>Service Animals are Welcome</p>
+                                    <p>Valet parking for vehicles outfitted for drivers in wheelchairs</p>
+                                </div>
+                                <div class="border-bottom">
+                                    <p class="accordion-body-H">Guest Room Accessibility</p>
+                                    <p>Accessible on-site parking</p>
+                                    <p>Property has elevators</p>
+                                    <p>Self Operating lift or a sloped entry in hotel swimming pools</p>
+                                    <p>Service Animals are Welcome</p>
+                                    <p>Valet parking for vehicles outfitted for drivers in wheelchairs</p>
+                                </div>
+                                <div>
+                                    <p class="accordion-body-H">Accessible Hotel Restaurant</p>
+                                    <p>Accessible on-site parking</p>
+                                    <p>Property has elevators</p>
+                                    <p>Self Operating lift or a sloped entry in hotel swimming pools</p>
+                                    <p>Service Animals are Welcome</p>
+                                    <p>Valet parking for vehicles outfitted for drivers in wheelchairs</p>
+                                </div>
+                            
+                                <div>
+                                    <p class="accordion-body-H">Other Hotel Accessible Places</p>
+                                    <p>Accessible on-site parking</p>
+                                    <p>Property has elevators</p>
+                                    <p>Self Operating lift or a sloped entry in hotel swimming pools</p>
+                                    <p>Service Animals are Welcome</p>
+                                    <p>Valet parking for vehicles outfitted for drivers in wheelchairs</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Sustainability information
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#propertyDetails">
+                            <div class="accordion-body">
+                                <a href="#" class="" style="color: inherit; text-decoration: underline;">Check out how our structures were made</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="subtitle section-description mt-5">Have a question?</p>
+                    <p class="section-title text-center text-uppercase">Frequently Asked Questions</p>
+                    <div class="accordion position-relative" id="propertyDetails">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed border-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Here will be place the question to be answered...
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#propertyDetails">
+                                <div class="accordion-body accordion-body-FAQ accordion-body-underlined">
+                                    Booking with us is simple and hassle-free. Visit our website, select your check-in and check-out dates, choose your room, and confirm your booking online. Our check-in time starts at 3 PM, and check-out is at 11 AM. You can modify or cancel your booking through our website, but please review our cancellation policy for any applicable charges. Depending on your selected plan, breakfast may be included. We accept various payment methods, including credit and debit cards, as well as secure online payment options. For any other inquiries, our customer support team is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Here will be place the question to be answered...
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#propertyDetails">
+                                <div class="accordion-body accordion-body-FAQ accordion-body-underlined">
+                                    Booking with us is simple and hassle-free. Visit our website, select your check-in and check-out dates, choose your room, and confirm your booking online. Our check-in time starts at 3 PM, and check-out is at 11 AM. You can modify or cancel your booking through our website, but please review our cancellation policy for any applicable charges. Depending on your selected plan, breakfast may be included. We accept various payment methods, including credit and debit cards, as well as secure online payment options. For any other inquiries, our customer support team is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Here will be place the question to be answered...
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#propertyDetails">
+                                <div class="accordion-body accordion-body-FAQ accordion-body-underlined">
+                                    Booking with us is simple and hassle-free. Visit our website, select your check-in and check-out dates, choose your room, and confirm your booking online. Our check-in time starts at 3 PM, and check-out is at 11 AM. You can modify or cancel your booking through our website, but please review our cancellation policy for any applicable charges. Depending on your selected plan, breakfast may be included. We accept various payment methods, including credit and debit cards, as well as secure online payment options. For any other inquiries, our customer support team is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Here will be place the question to be answered...
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#propertyDetails">
+                                <div class="accordion-body accordion-body-FAQ accordion-body-underlined">
+                                    Booking with us is simple and hassle-free. Visit our website, select your check-in and check-out dates, choose your room, and confirm your booking online. Our check-in time starts at 3 PM, and check-out is at 11 AM. You can modify or cancel your booking through our website, but please review our cancellation policy for any applicable charges. Depending on your selected plan, breakfast may be included. We accept various payment methods, including credit and debit cards, as well as secure online payment options. For any other inquiries, our customer support team is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Here will be place the question to be answered...
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#propertyDetails">
+                                <div class="accordion-body accordion-body-FAQ accordion-body-underlined">
+                                    Booking with us is simple and hassle-free. Visit our website, select your check-in and check-out dates, choose your room, and confirm your booking online. Our check-in time starts at 3 PM, and check-out is at 11 AM. You can modify or cancel your booking through our website, but please review our cancellation policy for any applicable charges. Depending on your selected plan, breakfast may be included. We accept various payment methods, including credit and debit cards, as well as secure online payment options. For any other inquiries, our customer support team is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer py-5">
+                    <div class="container">
+                      <!-- First Row -->
+                      <div class="row text-center text-md-start">
+                        <div class="col-md-4 border-bottom border-end">
+                          <img src="logo-black.svg" alt="Azul Emerald Logo" class="mb-3">
+                        </div>
+                        <div class="col-md-4 border-bottom border-end">
+                          <h5 class="footer-title">Menu</h5>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link">Homepage</a></li>
+                            <li><a href="#" class="footer-link">About us</a></li>
+                            <li><a href="#" class="footer-link">Activities</a></li>
+                            <li><a href="#" class="footer-link">Accommodations</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 ms-0 text-md-end text-center border-bottom">
+                          <h5 class="footer-title">Contact Information</h5>
+                          <address class="footer-link-address mt-5">
+                            Haiti Street, Luxury Azul Resort, Madagascar
+                          </address>
+                          <p><a href="mailto:azul@gmail.com" class="footer-link-address">azul@gmail.com</a></p>
+                          <p><a href="mailto:azul@gmail.com" class="footer-link-address">+73 123 411 4560</a></p>
+
+                        </div>
+                      </div>
+                  
+                      <!-- Second Row -->
+                      <div class="row mt-4 text-center text-md-start align-items-center ">
+                        <div class="col-md-4 border-end">
+                          <ul class="social-icons list-inline">
+                            <li class="list-inline-item"><a href="#"><img src="dribble.svg" alt="Dribbble"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="twitter.svg" alt="Twitter"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="youtube.svg" alt="YouTube"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="instagram.svg" alt="Instagram"></a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4 text-md-end text-center">
+                            <p class="text-muted mb-0">© 2024 Luminous. All rights reserved</p>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                  
+            </div>
+
+
+           
+              
+
+
+
+
+            
+
+
+            
+            
+    
+    </section>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Splide.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- Splide.js AutoScroll Extension -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@latest/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script>
+
+        const carousel = document.getElementById('carouselExampleControls');
+
+        const currentSlide = document.getElementById('current-slide');
+        const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+        carousel.addEventListener('slide.bs.carousel', (e) => {
+            const newIndex = e.to;
+            currentSlide.textContent = newIndex + 1; // Update current slide index
+        });
+
+        const carousel2 = document.getElementById('carouselExampleControls2'); // Target the second carousel
+
+        const currentSlide2 = document.getElementById('current-slide-2'); // Target the current slide span for the second carousel
+        const totalSlides2 = carousel2.querySelectorAll('.carousel-item').length; // Count the total slides in the second carousel
+
+        if (currentSlide2) {
+        currentSlide2.textContent = 1; // Initialize the current slide index to 1
+        }
+
+        const totalSlidesSpan2 = document.getElementById('total-slides-2'); // Target the total slides span for the second carousel
+        if (totalSlidesSpan2) {
+        totalSlidesSpan2.textContent = totalSlides2; // Set the total slides count
+        }
+
+        carousel2.addEventListener('slide.bs.carousel', (e) => {
+        const newIndex = e.to; // Get the index of the upcoming slide
+        if (currentSlide2) {
+            currentSlide2.textContent = newIndex + 1; // Update the current slide index
+        }
+        });
+
+  
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Flatpickr
+            flatpickr("#checkin-date", {
+                dateFormat: "Y-m-d", // Customize the date format as needed
+                allowInput: true, // Allows manual typing
+            });
+            flatpickr("#checkout-date", {
+                dateFormat: "Y-m-d", // Customize the date format as needed
+                allowInput: true, // Allows manual typing
+            });
+    
+            // Initialize Owl Carousel
+            $(document).ready(function () {
+                $('#carousel-1').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+        // Initialize the second carousel with 2 items
+        $('#carousel-2').owlCarousel({
+            loop: true,
+            margin: 10,
+
+
+            nav: true,
+            slideBy: 2, // Moves 2 items per click
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1200: {
+                    items: 2
+                }
+            }
+        });
+
+                
+    
+                // Attach custom buttons to Owl Carousel
+        $(".owl-prev").click(function () {
+                    $(".owl-carousel").trigger("prev.owl.carousel");
+                });
+                $(".owl-next").click(function () {
+                    $(".owl-carousel").trigger("next.owl.carousel");
+                });
+            });
+        });
+
+
+         // Initialize Original Splide
+            const originalSplide = new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 4, // Default number of slides per page
+            gap: '10px', // Default gap between slides
+            autoScroll: {
+            speed: -1,
+            pauseOnHover: false,
+            },
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+            1200: {
+                perPage: 3, // Show 3 slides per page for screens <= 1200px
+                gap: '8px', // Adjust gap for smaller screens
+            },
+            768: {
+                perPage: 2, // Show 2 slides per page for screens <= 768px
+                gap: '6px',
+            },
+            480: {
+                perPage: 1, // Show 1 slide per page for screens <= 480px
+                gap: '4px',
+            },
+            },
+        });
+
+        originalSplide.mount(window.splide.Extensions);
+
+
+        // Initialize Top Row Splide (Right to Left)
+        const topRow = new Splide('.top-row', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 4,
+        gap: '10px',
+        autoScroll: {
+            speed: -1, // Move from right to left
+            pauseOnHover: false,
+        },
+        arrows: false,
+        pagination: false,
+        breakpoints: {
+        1200: {
+            perPage: 3, // Show 3 slides per page for screens <= 1200px
+            gap: '8px', // Adjust gap for smaller screens
+        },
+        768: {
+            perPage: 2, // Show 2 slides per page for screens <= 768px
+            gap: '6px',
+        },
+        480: {
+            perPage: 1, // Show 1 slide per page for screens <= 480px
+            gap: '4px',
+        },
+        },
+        });
+
+        topRow.mount(window.splide.Extensions);
+
+        // Initialize Bottom Row Splide (Left to Right)
+        const bottomRow = new Splide('.bottom-row', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 4,
+        gap: '10px',
+        autoScroll: {
+            speed: 1, // Move from left to right
+            pauseOnHover: false,
+        },
+        arrows: false,
+        pagination: false,
+        breakpoints: {
+        1200: {
+            perPage: 3, // Show 3 slides per page for screens <= 1200px
+            gap: '8px', // Adjust gap for smaller screens
+        },
+        768: {
+            perPage: 2, // Show 2 slides per page for screens <= 768px
+            gap: '6px',
+        },
+        480: {
+            perPage: 1, // Show 1 slide per page for screens <= 480px
+            gap: '4px',
+        },
+        },
+        });
+        bottomRow.mount(window.splide.Extensions);
+
+
+        
+    </script>
+
+    
+</body>
+</html>

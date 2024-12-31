@@ -1,0 +1,1139 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.carousel-item {
+    height: 100vh; /* Full height */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .custom-carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-family: Figtree, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .custom-carousel-navigation span {
+    margin: 0 10px; /* Space around the line */
+  }
+
+  .custom-carousel-navigation .line {
+    width: 72px; /* Exact line width */
+    height: 2px; /* Thickness of the line */
+    background-color: white;
+  }
+
+  .top-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .main-navbar {
+    position: absolute;
+    top: 70px; /* Below the top navbar */
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav-link {
+    color: white; /* Set text color to red */
+    font-weight: 400;
+  }
+  
+ 
+
+  .navbar .navbar-logo {
+    height: 50px;
+  }
+
+  .btn-outline-light{
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 0px;
+
+  }
+
+  .btn-outline-light-s {
+    background-color: rgba(255, 255, 255, 0.1); /* Maintain transparency */
+    color: white;
+    border-radius: 0px;
+    width: 97px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .btn-outline-light-s:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+    color: white;
+    border-radius: 0px;
+  }
+
+  .custom-toggler {
+    background-color: rgba(255, 255, 255, 0.1); /* Maintain transparency */
+    border: none; /* Remove any border */
+    padding: 12px; /* Optional: Adjust padding for better spacing */
+    border-radius: 0px;
+
+
+  }
+  
+  .custom-toggler:hover,
+  .custom-toggler:focus,
+  .custom-toggler:active {
+    background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+    outline: none; /* Remove focus outline */
+    border: none; /* Ensure no border on hover or focus */
+    box-shadow: none; /* Remove click outline */
+
+  }
+  
+  .custom-toggler-icon {
+    width: auto; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+
+  .navbar .dropdown-menu-dark .dropdown-item {
+    font-size: 0.875rem;
+    color: white;
+  }
+
+  .navbar .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #555;
+  }
+
+  .dropdown-toggle::after {
+    content: none; /* Remove the default Bootstrap arrow */
+  }
+
+  .dropdown-arrow {
+    width: 11px; /* Adjust size */
+    margin-left: 5px; /* Space between "EN" and the arrow */
+    vertical-align: middle; /* Align with text */
+  }
+
+  .centered-text {
+    position: absolute;
+    
+    top: 50%; /* Position in the middle vertically */
+    left: 50%; /* Position in the middle horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 11; /* Ensure it is above the carousel */
+    padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  width: 100%;
+  }
+
+  .centered-text h1 {
+    margin: 10px 0; /* Space between rows */
+    font-size: 18px;
+    color: #DDDDDD;
+    font-weight: 275;
+
+  }
+
+ .centered-text h2{
+    margin: 10px 0; /* Space between rows */
+    font-size: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: 'Adobe Caslon Pro', serif;
+  }
+
+  @media (max-width: 1199px) {
+    .centered-text h1 {
+      font-size: 18px;
+     
+  
+    }
+    .centered-text h2 {
+      font-size: 52px; /* Reduce font size */
+    }
+  }
+  
+  /* For screens smaller than 992px */
+  @media (max-width: 991px) {
+    .centered-text h2 {
+      font-size: 42px; /* Further reduce font size */
+    }
+  }
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 767px) {
+    .centered-text h1 {
+      font-size: 16px;
+    }
+    .centered-text h2 {
+      font-size: 32px; /* Reduce font size for tablets */
+    }
+  }
+  
+  /* For screens smaller than 576px */
+  @media (max-width: 575px) {
+    .centered-text h1 {
+      font-size: 14px;
+     
+  
+    }
+    .centered-text h2 {
+      font-size: 24px; /* Smaller font size for mobile phones */
+    }
+
+   
+  }
+
+ 
+
+  .form-section {
+    position: absolute;
+    bottom: 60px; /* Position it above the range navigation */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11; /* Ensure it overlays the carousel */
+    width: 90%; /* Adjust width for responsiveness */
+  }
+
+  .form-control {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+  border-radius: 0px;
+  height: 45px;
+  padding: 10px;
+  font-size: 1rem;
+  position: relative;
+
+
+}
+
+
+
+.with-icon {
+  background-image: url('checkin.png'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Adjust position */
+  background-size: 20px 20px; /* Adjust size */
+  padding-left: 40px; /* Add padding to make space for the icon */
+  border: none; /* Removes the border */
+  outline: none; /* Removes focus outline (optional) */
+}
+
+.with-guest {
+  background-image: url('guest.png'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Adjust position */
+  background-size: 20px 20px; /* Adjust size */
+  padding-left: 40px; /* Add padding to make space for the icon */
+  border: none; /* Removes the border */
+  outline: none; /* Removes focus outline (optional) */
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter text for placeholders */
+}
+
+/* Focus and Active State for Input Fields */
+.form-control:focus,
+.form-control:active {
+  background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Highlighted border on focus */
+  outline: none; /* Removes default browser outline */
+}
+
+/* Transparent Button */
+.btn-primary {
+  background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+  color: white;
+  border: 1px solid white; /* Subtle blue border */
+  border-radius: 0px;
+  height: 45px;
+  font-size: 1rem;
+  border: none; /* Removes the border */
+  outline: none; /* Removes focus outline (optional) */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+
+  color: white;
+  border: 0px solid white; /* Subtle blue border */
+  outline: none; /* Removes default browser outline */
+  border: none; /* Removes the border */
+  outline: none; /* Removes focus outline (optional) */
+}
+
+.btn-primary:hover{
+  background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+  color: white;
+  border: 0px solid white; /* Subtle blue border */
+  border-radius: 0px;
+  height: 45px;
+  font-size: 1rem;
+  
+}
+
+
+
+/* General Flatpickr Calendar Styling */
+.flatpickr-calendar {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text for contrast */
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for elevation */
+}
+
+/* Day Buttons */
+.flatpickr-day {
+  color: #fff; /* Default day color */
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flatpickr-day:hover {
+  background-color: #555; /* Highlight on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.flatpickr-day.today {
+  color: #fff;
+}
+
+.flatpickr-day.selected {
+  background-color: #555; /* Highlight on hover */
+  color: #fff;
+}
+
+/* Month and Year Navigation */
+.flatpickr-current-month {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  color: #fff; /* Arrows */
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+  background-color: #555; /* Highlight on hover */
+}
+
+/* Time Selection (if enabled) */
+.flatpickr-time {
+  background-color: #333;
+  color: #fff;
+}
+
+.flatpickr-time input {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.flatpickr-time input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #555;
+}
+
+.owl-nav, .owl-dots {
+  display: none !important;
+}
+
+
+
+
+/* Section Styling */
+.luxury-escape-section  {
+    position: relative;
+    background-color: #f9f9f9; /* Light background */
+    overflow: hidden;
+}
+
+.background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Line\ pattern.png'); /* Add your background image here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-color: #f6f8f3;
+}
+
+.luxury-escape-section .container-fluid  {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background lines */
+}
+
+/* Image Section */
+
+.no-vh {
+  height: auto !important; /* Override vh-100 */
+}
+
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Maintain transparency */
+
+
+}
+
+.image-overlay span {
+    font-size: 14px;
+}
+
+.image-overlay .btn {
+    font-size: 14px;
+}
+.custom-border-top {
+    border-top: 1px solid rgba(217, 217, 217, 0.1); /* Adjust thickness and color as needed */
+
+}
+
+/* Text Section */
+.section-subtitle {
+    font-size: 18px;
+    color: #51514D;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 62px;
+    font-weight: normal;
+    color: #664914;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    z-index: 10;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 52px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 0.5;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 32px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 0.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 62px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 29px;
+    font-weight: normal;
+    color: #664914;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+}
+.section-description {
+    font-size: 18px;
+    color: #51514D;
+}
+
+
+@media (max-width: 575px) {
+  .section-description {
+    font-size: 14px;
+    margin-bottom: 0px;
+
+  
+}
+}
+
+.btn-link {
+    font-size: 16px;
+    color: #00474B;
+    font-weight: normal;
+}
+
+@media (max-width: 575px) {
+  .btn-link {
+    font-size: 14px;
+    color: #00474B;
+    font-weight: normal;
+}
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    color: #00474B;
+
+}
+
+.carousel-controls  {
+   z-index: 10;
+    
+}
+.carousel-controls button {
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+
+@media (max-width: 768px) {
+  .carousel-controls .btn img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-controls {
+    width: 100%; /* Ensure buttons span the full width */
+    transform: translateX(-15px);
+  }
+  
+}
+
+
+.discover-rooms-section{
+    z-index: 0;
+}
+
+
+
+.custom-section {
+    background-image: url('person-surfing-flying.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Adjust the height as needed */
+    position: relative;
+    
+  }
+
+  .text-box {
+    width: 70%; /* Control the width of the text box */
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .section-title1 {
+    font-size: 62px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 0px;
+    line-height: 1.2;
+    z-index: 10;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+.accommodations-text {
+  display: inline; /* Default: keep on the same line */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .accommodations-text {
+    display: block; /* Break onto a new line for screens between 576px and 767px */
+  }
+}
+
+@media (min-width: 468px) and (max-width: 576px) {
+  .accommodations-center{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .section-title1 {
+        font-size: 52px;
+        font-weight: normal;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .text-box {
+        width: 80%; /* Control the width of the text box */
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+}
+
+@media (max-width: 992px) {
+    .section-title1 {
+        font-size: 40px;
+        font-weight: normal;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .text-box {
+        width: 85%; /* Control the width of the text box */
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+}
+
+@media (max-width: 768px) {
+    .section-title1 {
+        font-size: 40px;
+        font-weight: normal;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .text-box {
+        width: 90%; /* Control the width of the text box */
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+      .custom-section {
+        background-image: url('person-surfing-flying-parachute-same-time-kitesurfing-bonaire-caribbean.png');
+        background-size: cover;
+        background-position: center;
+        height: 60vh; /* Adjust the height as needed */
+        position: relative;
+        
+      }
+}
+
+@media (max-width: 450px) {
+    .section-title1 {
+        font-size: 30px;
+        font-weight: normal;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .text-box {
+        width: 95%; /* Control the width of the text box */
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+      .custom-section {
+        background-image: url('person-surfing-flying-parachute-same-time-kitesurfing-bonaire-caribbean.png');
+        background-size: cover;
+        background-position: center;
+        height: 50vh; /* Adjust the height as needed */
+        position: relative;
+        
+      }
+}
+
+
+.Kiteboarding-section .container  {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background lines */
+}
+
+.Kiteboarding-section .container-fluid  {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background lines */
+}
+
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 40px;
+  }
+
+  .slider-track {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+  }
+
+  .slider-track img {
+    height: auto;
+    display: inline-block;
+    margin-right: 20px; /* Space between images */
+  }
+
+
+
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+
+  .background-lines1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Line\ pattern.png'); /* Add your background image here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    
+    background-color: #f6f8f3;
+}
+
+  .restaurant-section{
+    z-index: 1;
+  }
+
+  .restaurant-section .container{
+    z-index: 1;
+    position: relative;
+  }
+  .restaurant-section-check{
+    font-size: 16px;
+    color: #282825;
+  }
+
+  .medium-image-wrapper {
+    transform: translateX(-55px); /* Moves the element 50px to the right */
+  }
+
+ 
+ 
+
+
+
+  @media (max-width: 1400px) {
+    .medium-image-wrapper {
+      transform: translateX(-25px); /* Moves the element 50px to the right */
+    }
+  }
+
+
+
+
+  .pattern-section {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      #f6f8f3 0%,
+      #f6f8f3 27.5%,
+      #eff2eb 27.5%,
+      #eff2eb 52.5%,
+      #f6f8f3 52.5%,
+      #f6f8f3 100%
+    );
+    overflow: hidden;
+  }
+.pattern-section .container{
+    z-index: 1;
+    position: relative;
+}
+
+  .background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('linepattern.png'); /* Replace with your uploaded image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1; /* Adjust opacity for visibility */
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+
+
+  @media (min-width: 1200px) {
+    #carousel-2 .item {
+        width: 75%; /* Set the width as a percentage */
+        margin: 0 auto; /* Optional: Center items within the carousel */
+    }
+}
+
+
+
+
+
+  .background-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('linepattern.png'); /* Add your background image here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+   
+}
+
+.footer-section{
+  background: linear-gradient(
+    to bottom,
+    #eff2eb 0%,
+    #eff2eb 65%,
+    #f6f8f3 65%,
+    #f6f8f3 100%
+  );
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-image: url('accordion-open.svg'); /* Collapsed state image */
+    background-repeat: no-repeat;
+    background-position: right center; /* Position image to the right */
+    background-size: 36px; /* Adjust size as needed */
+    border-bottom: 1px solid #D7D3D0; /* Add a white border at the bottom */
+
+
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-image: url('accordion-close.svg'); /* Expanded state image */
+
+
+}
+
+.accordion-button::after {
+    content: '';
+    position: absolute;
+    right: 1.5rem; /* Adjust as needed to align with the primary image */
+    top: 40%; /* Center vertically */
+    transform: translateX(80%); /* Center the image vertically */
+
+    background-image: url('arrow-down.svg'); /* Second image */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Adjust size as needed */
+    width: 20px; /* Match the size of the overlay image */
+    height: 20px; /* Match the size of the overlay image */
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '';
+    position: absolute;
+    right: 1.5rem; /* Adjust as needed to align with the primary image */
+    top: 45%; /* Center vertically */
+    transform: translateX(80%); /* Center the image vertically */
+    background-image: url('arrow-up.svg'); /* Image for open state */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Adjust size as needed */
+    width: 20px; /* Match the size of the overlay image */
+    height: 20px; /* Match the size of the overlay image */
+
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Removes the blue glow effect */
+    outline: none; /* Removes the default focus outline */
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.accordion-header .accordion-button {
+    font-size: 34px !important; /* Set your desired font size */
+    color: #51514D;
+    font-weight: 700;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+  .accordion-header .accordion-button {
+    font-size: 24px !important; /* Set your desired font size */
+    color: #51514D;
+    font-weight: 700;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .accordion-header .accordion-button {
+    font-size: 28px !important; /* Set your desired font size */
+    color: #51514D;
+    font-weight: 700;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .accordion-header .accordion-button {
+    font-size: 30px !important; /* Set your desired font size */
+    color: #51514D;
+    font-weight: 700;
+    font-family: 'Adobe Caslon Pro', serif;
+
+}
+}
+
+
+
+
+.accordion-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1rem; /* Space between items */
+    font-size: 18px; /* Adjust font size */
+    color: #51514D; /* Adjust text color */
+    border-bottom: 1px solid #D7D3D0; /* Add a white border at the bottom */
+
+}
+.border-bottom{
+    border-bottom: 1px solid #D7D3D0; /* Add a white border at the bottom */
+   
+
+
+}
+
+.border-top{
+    border-top: 1px solid #D7D3D0; /* Add a white border at the bottom */
+
+
+}
+
+.accordion-body-underlined a {
+    text-decoration: underline; /* Add underline */
+    color: inherit;
+}
+
+.accordion-body-H{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.accordion-body-G {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    gap: 1rem; /* Space between items */
+    font-size: 18px; /* Adjust font size */
+    color: #51514D; /* Adjust text color */
+}
+
+.accordion-body-FAQ {
+    display: grid;
+    grid-template-columns: 1fr; /* Two equal columns */
+    gap: 1rem; /* Space between items */
+    font-size: 18px; /* Adjust font size */
+    color: #51514D; /* Adjust text color */
+}
+
+
+
+
+.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+
+.background-footer .container-footer .container-footer-FAQ{
+position: relative;
+z-index: 1;
+margin: 0 auto;
+border-radius: 8px;
+}
+ 
+
+
+
+
+
+
+.splide {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .image-stack {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;    /* Center images horizontally */
+    gap: 25px;              /* Optional: Add spacing between images */
+  }
+  
+
+  .splide__slide {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+
+ 
+
+
+  .splide__slide img {
+    display: block;
+    width: 100%; /* Ensure image fits within the slide width */
+    max-height: 100%; /* Ensure image fits within the slide height */
+    object-fit: cover; /* Maintain aspect ratio without cropping */
+  }
+
+  .top-row img{
+    display: block;
+    height: 100%; /* Ensure image fits within the slide height */
+    width: 100%;
+    object-fit: cover; /* Maintain aspect ratio without cropping */
+  }
+
+  .bottom-row img{
+    display: block;
+    height: 100%; /* Ensure image fits within the slide height */
+    width: 100%;
+
+    object-fit: cover; /* Maintain aspect ratio without cropping */
+   
+  }
+
+
+
+
+  /* Wrapper for the two new carousels */
+  .splide-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two rows */
+   
+  }
+
+  .footer {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #00474B;
+    margin-bottom: 15px;
+  }
+  
+
+  .footer-link {
+    font-size: 56px;
+
+    color: #282825;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Adobe Caslon Pro', serif;
+
+  }
+  
+  .footer-link:hover {
+    color: #282825;
+  }
+
+  .footer-link-address{
+    font-size: 18px;
+    color: #282825;
+    font-weight: 400;
+  }
+
+ 
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icons img:hover {
+    opacity: 0.7; /* Hover effect for social icons */
+  }
+  
+  .text-muted {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-title {
+      text-align: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  
